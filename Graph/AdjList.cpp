@@ -15,4 +15,4 @@ typedef struct {
     AdjList vertices; /*邻接表*/
     int vexnum,arcnum; /*图的顶点和边数数*/
     GraphKind kind; /*图的类型*/
-};
+}Graph;
