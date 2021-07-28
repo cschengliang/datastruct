@@ -4,15 +4,22 @@
 
 #include "Floyd.h"
 /*准备图的邻接矩阵和一个path数组*/
-int A[3][3];
-int path[3][3];
-int n = 3; /*n为图的节点个数 */
-for(int k=0;k<n;k++){
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(A[i][j]>A[i][k]+A[k][j]){
-                A[i][j]=A[i][k]+A[k][j];
-                path[i][j]=k
+int main(){
+    int A[3][3]={0,6,13,
+    10,0,4,
+    5,1000000,0};
+
+    int path[3][3]={-1,-1,-1,
+    -1,-1,-1,
+    -1,-1,-1};
+    int n = 3; /*n为图的节点个数 */
+    for(int k=0;k<n;k++){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(A[i][j]>A[i][k]+A[k][j]){
+                    A[i][j]=A[i][k]+A[k][j];
+                    path[i][j]=k;
+                }
             }
         }
     }
