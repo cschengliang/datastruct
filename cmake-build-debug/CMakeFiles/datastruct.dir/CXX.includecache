@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/liang/CLionProjects/datastruct/Graph/Floyd.cpp
+Floyd.h
+C:/Users/liang/CLionProjects/datastruct/Graph/Floyd.h
+
+C:/Users/liang/CLionProjects/datastruct/Graph/Floyd.h
+
