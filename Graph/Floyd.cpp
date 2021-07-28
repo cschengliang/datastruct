@@ -13,12 +13,12 @@ int main(){
     -1,-1,-1,
     -1,-1,-1};
     int n = 3; /*n为图的节点个数 */
-    for(int k=0;k<n;k++){
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
+    for(int k=0;k<n;k++){ /*选择第k个节点为中续节点*/
+        for(int i=0;i<n;i++){ /* 选择出发点为第i个点*/
+            for(int j=0;j<n;j++){  /*选择目的点为第j个点 */
                 if(A[i][j]>A[i][k]+A[k][j]){
-                    A[i][j]=A[i][k]+A[k][j];
-                    path[i][j]=k;
+                    A[i][j]=A[i][k]+A[k][j]; /*如果目前节点i和节点j之间的距离大于使用中续点后的距离，则更新此距离为最小距离 */
+                    path[i][j]=k;   /**/
                 }
             }
         }
