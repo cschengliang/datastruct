@@ -3,5 +3,4 @@ project(datastruct)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(datastruct
-        Graph/Floyd.cpp)
+add_executable(LinearList/LinearList.cpp)
