@@ -27,6 +27,29 @@ bool InitList(LinkList &L){
     L->next = NULL;
     return true;
 }
+bool Insert(LinkList &L,ElemType e,int i){
+    if(i<1)
+        return false;
+    LNode *p = L;
+    int j=0;
+    //找到第i个节点前面一个节点的位置
+    //
+    while (p!=NULL&& j<i-1){
+        p = p->next;
+        j++;
+    }
+    //如果第i-1个节点为NULL，则退出
+    if(p == NULL)
+        return false;
+    LNode *s = (LNode *) malloc(sizeof(LNode));
+    s->data = e;
+    s->next = p->next;
+    p->next = s;
+    return true;
+}
+void Delete(LinkList &L,ElemType &e,int i){
+
+}
 
 
 int main(){
