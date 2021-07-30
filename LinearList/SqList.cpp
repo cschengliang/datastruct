@@ -36,6 +36,32 @@ ElemType GetElem(SeqList s, int i) {
     return s.data[i - 1];
 }
 
+int Loaction(SeqList L, ElemType e) {
+
+}
+
+//在第i个位置插入e
+bool Insert(SeqList &s, ElemType e, int i) {
+    //把第i个位置开始后面的数依次往后移动
+    if(i<0 || i>s.length){
+        return false;
+    }
+    if(s.length >= s.maxsize){
+        return false;
+    }
+    for (int j = s.length; j >= i ; j--) {
+        s.data[j-1] = s.data[j];
+    }
+    s.data[i-1] = e;
+    s.length++;
+    return true;
+}
+
+//删除第i个位置，把删除数据放入e中
+void Delete(SeqList &s, ElemType &e, int i) {
+
+}
+
 void Print(SeqList s) {
     int i = 0;
     for (; i < s.length; i++) {
