@@ -60,6 +60,19 @@ bool InsertNextNode(LNode *p,ElemType e){
     return true;
 
 }
+bool InsertPriorNode(LNode *p,ElemType e){
+    if(p==NULL)
+        return false;
+    LNode *q = (LNode*) malloc(sizeof(LNode));
+    if(q == NULL)
+        return false;
+    q->data = p->data;
+    p->data = e;
+
+    q->next =p->next;
+    p->next = p;
+    return true;
+}
 void Delete(LinkList &L,ElemType &e,int i){
 
 }
