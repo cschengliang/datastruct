@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named datastruct
+# Target rules for targets named LinearList
 
 # Build rule for target.
-datastruct: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 datastruct
-.PHONY : datastruct
+LinearList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LinearList
+.PHONY : LinearList
 
 # fast build rule for target.
-datastruct/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\datastruct.dir\build.make CMakeFiles/datastruct.dir/build
-.PHONY : datastruct/fast
+LinearList/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/build
+.PHONY : LinearList/fast
 
-Graph/Floyd.obj: Graph/Floyd.cpp.obj
-.PHONY : Graph/Floyd.obj
+LinearList/SqList.obj: LinearList/SqList.cpp.obj
+.PHONY : LinearList/SqList.obj
 
 # target to build an object file
-Graph/Floyd.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\datastruct.dir\build.make CMakeFiles/datastruct.dir/Graph/Floyd.cpp.obj
-.PHONY : Graph/Floyd.cpp.obj
+LinearList/SqList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/SqList.cpp.obj
+.PHONY : LinearList/SqList.cpp.obj
 
-Graph/Floyd.i: Graph/Floyd.cpp.i
-.PHONY : Graph/Floyd.i
+LinearList/SqList.i: LinearList/SqList.cpp.i
+.PHONY : LinearList/SqList.i
 
 # target to preprocess a source file
-Graph/Floyd.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\datastruct.dir\build.make CMakeFiles/datastruct.dir/Graph/Floyd.cpp.i
-.PHONY : Graph/Floyd.cpp.i
+LinearList/SqList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/SqList.cpp.i
+.PHONY : LinearList/SqList.cpp.i
 
-Graph/Floyd.s: Graph/Floyd.cpp.s
-.PHONY : Graph/Floyd.s
+LinearList/SqList.s: LinearList/SqList.cpp.s
+.PHONY : LinearList/SqList.s
 
 # target to generate assembly for a file
-Graph/Floyd.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\datastruct.dir\build.make CMakeFiles/datastruct.dir/Graph/Floyd.cpp.s
-.PHONY : Graph/Floyd.cpp.s
+LinearList/SqList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/SqList.cpp.s
+.PHONY : LinearList/SqList.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... datastruct
-	@echo ... Graph/Floyd.obj
-	@echo ... Graph/Floyd.i
-	@echo ... Graph/Floyd.s
+	@echo ... LinearList
+	@echo ... LinearList/SqList.obj
+	@echo ... LinearList/SqList.i
+	@echo ... LinearList/SqList.s
 .PHONY : help
 
 

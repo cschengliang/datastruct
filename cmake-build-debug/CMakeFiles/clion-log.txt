@@ -1,9 +1,4 @@
 C:\protablesoftware\CLION\CLion-2021.1.3.win\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\liang\CLionProjects\datastruct
-CMake Error at CMakeLists.txt:6 (add_executable):
-  The target name "LinearList/LinearList.cpp" is reserved or not valid for
-  certain CMake features, such as generator expressions, and may result in
-  undefined behavior.
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/liang/CLionProjects/datastruct/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/liang/CLionProjects/datastruct/cmake-build-debug

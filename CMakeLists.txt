@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
-project(datastruct)
+project(LinearList)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LinearList/LinearList.cpp)
+add_executable(LinearList LinearList/SqList.cpp)
