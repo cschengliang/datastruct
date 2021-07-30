@@ -36,8 +36,12 @@ ElemType GetElem(SeqList s, int i) {
     return s.data[i - 1];
 }
 
-int Loaction(SeqList L, ElemType e) {
-
+int LoacteElem(SeqList s, ElemType e) {
+    for (int i = 0; i < s.length; i++) {
+        if (s.data[i] == e)
+            break;
+    }
+    return 0;
 }
 
 //在第i个位置插入e

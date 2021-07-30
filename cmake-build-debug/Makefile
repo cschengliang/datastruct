@@ -128,29 +128,29 @@ LinearList/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/build
 .PHONY : LinearList/fast
 
-LinearList/SqList.obj: LinearList/SqList.cpp.obj
-.PHONY : LinearList/SqList.obj
+LinearList/LinkList.obj: LinearList/LinkList.cpp.obj
+.PHONY : LinearList/LinkList.obj
 
 # target to build an object file
-LinearList/SqList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/SqList.cpp.obj
-.PHONY : LinearList/SqList.cpp.obj
+LinearList/LinkList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/LinkList.cpp.obj
+.PHONY : LinearList/LinkList.cpp.obj
 
-LinearList/SqList.i: LinearList/SqList.cpp.i
-.PHONY : LinearList/SqList.i
+LinearList/LinkList.i: LinearList/LinkList.cpp.i
+.PHONY : LinearList/LinkList.i
 
 # target to preprocess a source file
-LinearList/SqList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/SqList.cpp.i
-.PHONY : LinearList/SqList.cpp.i
+LinearList/LinkList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/LinkList.cpp.i
+.PHONY : LinearList/LinkList.cpp.i
 
-LinearList/SqList.s: LinearList/SqList.cpp.s
-.PHONY : LinearList/SqList.s
+LinearList/LinkList.s: LinearList/LinkList.cpp.s
+.PHONY : LinearList/LinkList.s
 
 # target to generate assembly for a file
-LinearList/SqList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/SqList.cpp.s
-.PHONY : LinearList/SqList.cpp.s
+LinearList/LinkList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/LinkList.cpp.s
+.PHONY : LinearList/LinkList.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LinearList
-	@echo ... LinearList/SqList.obj
-	@echo ... LinearList/SqList.i
-	@echo ... LinearList/SqList.s
+	@echo ... LinearList/LinkList.obj
+	@echo ... LinearList/LinkList.i
+	@echo ... LinearList/LinkList.s
 .PHONY : help
 
 
