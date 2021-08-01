@@ -128,29 +128,29 @@ LinearList/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/build
 .PHONY : LinearList/fast
 
-LinearList/LinkList.obj: LinearList/LinkList.cpp.obj
-.PHONY : LinearList/LinkList.obj
+LinearList/Stack.obj: LinearList/Stack.cpp.obj
+.PHONY : LinearList/Stack.obj
 
 # target to build an object file
-LinearList/LinkList.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/LinkList.cpp.obj
-.PHONY : LinearList/LinkList.cpp.obj
+LinearList/Stack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/Stack.cpp.obj
+.PHONY : LinearList/Stack.cpp.obj
 
-LinearList/LinkList.i: LinearList/LinkList.cpp.i
-.PHONY : LinearList/LinkList.i
+LinearList/Stack.i: LinearList/Stack.cpp.i
+.PHONY : LinearList/Stack.i
 
 # target to preprocess a source file
-LinearList/LinkList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/LinkList.cpp.i
-.PHONY : LinearList/LinkList.cpp.i
+LinearList/Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/Stack.cpp.i
+.PHONY : LinearList/Stack.cpp.i
 
-LinearList/LinkList.s: LinearList/LinkList.cpp.s
-.PHONY : LinearList/LinkList.s
+LinearList/Stack.s: LinearList/Stack.cpp.s
+.PHONY : LinearList/Stack.s
 
 # target to generate assembly for a file
-LinearList/LinkList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/LinkList.cpp.s
-.PHONY : LinearList/LinkList.cpp.s
+LinearList/Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinearList.dir\build.make CMakeFiles/LinearList.dir/LinearList/Stack.cpp.s
+.PHONY : LinearList/Stack.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LinearList
-	@echo ... LinearList/LinkList.obj
-	@echo ... LinearList/LinkList.i
-	@echo ... LinearList/LinkList.s
+	@echo ... LinearList/Stack.obj
+	@echo ... LinearList/Stack.i
+	@echo ... LinearList/Stack.s
 .PHONY : help
 
 

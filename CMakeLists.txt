@@ -3,4 +3,4 @@ project(LinearList)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LinearList LinearList/LinkList.cpp)
+add_executable(LinearList LinearList/Stack.cpp)
